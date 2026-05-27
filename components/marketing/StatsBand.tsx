@@ -25,8 +25,8 @@ export function StatsBand() {
                 style={{ borderRight: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}
               >
                 <dt
-                  className="font-display text-ink"
-                  style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontVariationSettings: '"opsz" 72' }}
+                  className="font-display font-display-hero text-ink"
+                  style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontVariationSettings: '"opsz" 144' }}
                 >
                   {value}
                 </dt>

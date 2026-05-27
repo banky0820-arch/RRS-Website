@@ -29,7 +29,7 @@ export function Hero() {
       <div className="relative container-wide w-full py-24">
         <div className="max-w-4xl">
           <h1
-            className="font-display text-canvas"
+            className="font-display font-display-hero text-canvas"
             style={{
               fontSize: 'clamp(3.5rem, 8vw, 6rem)',
               fontVariationSettings: '"opsz" 144',

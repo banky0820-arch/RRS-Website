@@ -42,7 +42,7 @@ export function ServicesGrid() {
                 >
                   {title}
                 </h3>
-                <p className="font-body text-[16px] text-[var(--color-text-muted)] leading-relaxed mb-6">
+                <p className="font-body text-[17px] text-[var(--color-text-muted)] leading-relaxed mb-6">
                   {body}
                 </p>
                 <Link

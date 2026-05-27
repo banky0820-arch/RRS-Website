@@ -32,8 +32,9 @@ export function TestimonialSection() {
                   className="font-display text-ink italic"
                   style={{
                     fontSize: 'clamp(1.25rem, 2.2vw, 1.875rem)',
-                    fontVariationSettings: '"opsz" 36',
+                    fontVariationSettings: '"opsz" 36, "WONK" 1',
                     lineHeight: 1.35,
+                    letterSpacing: '-0.015em',
                   }}
                 >
                   &ldquo;{testimonial.quote}&rdquo;

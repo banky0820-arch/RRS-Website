@@ -55,8 +55,19 @@ body {
   font-family: var(--font-display);
   font-weight: 400;
   font-optical-sizing: auto;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   line-height: 1.05;
+}
+
+/* Tighter tracking for large hero-scale display text (3rem+) */
+.font-display-hero {
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+}
+
+/* Body prose: constrain line length for readability */
+.prose-body {
+  max-width: 65ch;
 }
 
 /* ─── Layout ─────────────────────────────────────────────────────────────── */

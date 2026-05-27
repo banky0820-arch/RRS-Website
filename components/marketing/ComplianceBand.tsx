@@ -36,7 +36,7 @@ export function ComplianceBand() {
               {compliance.certifications.map((cert) => (
                 <li
                   key={cert}
-                  className="font-body font-[500] text-[11px] tracking-[0.04em] text-canvas px-3 py-1.5"
+                  className="font-body font-[500] text-[11px] tracking-[0.08em] text-canvas px-3 py-1.5"
                   style={{ border: '1px solid rgba(250,247,242,0.2)' }}
                 >
                   {cert}

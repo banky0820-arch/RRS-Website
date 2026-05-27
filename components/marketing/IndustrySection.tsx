@@ -29,7 +29,7 @@ export function IndustrySection() {
             >
               {industrySection.headline}
             </h2>
-            <p className="font-body text-[17px] text-[var(--color-text-muted)] leading-relaxed mb-8">
+            <p className="font-body text-[17px] text-[var(--color-text-muted)] leading-relaxed mb-8 prose-body">
               {industrySection.body}
             </p>
             <p className="font-body font-[500] text-[13px] text-ink mb-3">Who we work with:</p>

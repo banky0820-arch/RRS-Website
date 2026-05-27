@@ -12,7 +12,7 @@ export function StatsBand() {
     >
       <div className="container-wide py-16">
         <dl
-          className="grid grid-cols-2 md:grid-cols-4"
+          className="grid grid-cols-2 md:grid-cols-3"
           style={{
             borderTop: '1px solid var(--color-border)',
             borderLeft: '1px solid var(--color-border)',

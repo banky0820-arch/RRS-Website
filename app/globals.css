@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ─────────────────────────────────────────────────────────
+   Exact names from the brief, exposed as CSS variables via @theme so Tailwind
+   generates matching utility classes (bg-ink, text-canvas, border-border, …).
+
+   Note on --color-accent: the brief's #7B9B7E (relative luminance ≈ 0.32)
+   fails WCAG AA against canvas (2.7:1). Adjusted to #436A47 (≈5.8:1 on
+   canvas, ≈6.1:1 white-on-sage) per the brief's own instruction to adjust.
+────────────────────────────────────────────────────────────────────────────── */
+@theme {
+  --color-ink:        #0A1628;
+  --color-canvas:     #FAF7F2;
+  --color-paper:      #FFFFFF;
+  --color-accent:     #436A47;
+  --color-text:       #0A0A0A;
+  --color-text-muted: #4A5568;
+  --color-border:     #E8E2D5;
+
+  /* Font stacks — next/font injects --font-fraunces / --font-inter at runtime */
+  --font-display: var(--font-fraunces, "Fraunces"), Georgia, serif;
+  --font-body:    var(--font-inter, "Inter"), system-ui, sans-serif;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-size: 17px;
+}
+
+/* ─── Focus rings (WCAG 2.1 AA) ─────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────────────── */
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+
+/* ─── Typography helpers ─────────────────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+/* ─── Layout ─────────────────────────────────────────────────────────────── */
+.container-wide {
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ─── Hairline dividers ──────────────────────────────────────────────────── */
+.hairline {
+  border: none;
+  height: 1px;
+  background-color: var(--color-border);
+}
+
+/* ─── Scroll-reveal (set by Framer Motion; defined here for SSR placeholder) */
+.reveal-initial {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+/* ─── Prefers-reduced-motion: kill all animation ─────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

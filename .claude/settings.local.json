@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx next *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001/)",
+      "Bash(kill %1)",
+      "Bash(mkdir -p /Users/pmac/Desktop/RRS/.claude)",
+      "Bash(xargs sed -i '' -e 's/30, 79, 255/99, 102, 241/g' -e s/30,79,255/99,102,241/g -e 's/10, 26, 122/79, 70, 229/g' -e s/10,26,122/79,70,229/g -e 's/#1E4FFF/#6366f1/g' -e 's/#4D7FFF/#818cf8/g' -e 's/#3B6EFF/#4f46e5/g' -e 's/#0A1A7A/#4338ca/g')",
+      "Bash(pkill -f \"next dev\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/framer-motion/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/react/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/tailwindcss/package.json'\\).version\\)\")",
+      "Bash(node -e \"console.log\\(require\\('./node_modules/@tailwindcss/postcss/package.json'\\).version\\)\")",
+      "Bash(npm run *)",
+      "Bash(find /Users/pmac/Desktop /Users/pmac/Downloads -maxdepth 2 \\\\\\( -iname \"*.png\" -o -iname \"*.jpg\" -o -iname \"*.jpeg\" -o -iname \"*.svg\" -o -iname \"*.webp\" \\\\\\) 2>/dev/null | head -20)",
+      "Bash(find /tmp /var/folders -name \"*.png\" -newer /Users/pmac/Desktop/RRS/package.json 2>/dev/null | head -10)",
+      "Bash(sips --cropToHeightWidth 124 140 --cropOffset 0 0 /Users/pmac/Desktop/RRS/public/logo-source.png --out /Users/pmac/Desktop/RRS/public/logo-mark.png)",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL available'\\)\")",
+      "Bash(sips --resampleHeight 40 /Users/pmac/Desktop/RRS/public/logo-source.png --out /Users/pmac/Desktop/RRS/public/logo.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/pmac/Desktop/RRS/public/logo.png)",
+      "Bash(sips --cropToHeightWidth 40 40 --cropOffset 0 -103 /Users/pmac/Desktop/RRS/public/logo.png --out /Users/pmac/Desktop/RRS/public/logo-mark.png)",
+      "Bash(sips --cropToHeightWidth 40 40 --cropOffset 0 103 /Users/pmac/Desktop/RRS/public/logo.png --out /Users/pmac/Desktop/RRS/public/logo-test1.png)",
+      "Bash(sips --cropToHeightWidth 40 60 --cropOffset 0 90 /Users/pmac/Desktop/RRS/public/logo.png --out /Users/pmac/Desktop/RRS/public/logo-test2.png)",
+      "Bash(sips --cropToHeightWidth 40 66 --cropOffset 0 -99 /Users/pmac/Desktop/RRS/public/logo.png --out /tmp/seg1.png)",
+      "Bash(sips --cropToHeightWidth 40 66 --cropOffset 0 -33 /Users/pmac/Desktop/RRS/public/logo.png --out /tmp/seg2.png)",
+      "Bash(sips --cropToHeightWidth 40 66 --cropOffset 0 33 /Users/pmac/Desktop/RRS/public/logo.png --out /tmp/seg3.png)",
+      "Bash(sips --cropToHeightWidth 40 66 --cropOffset 0 99 /Users/pmac/Desktop/RRS/public/logo.png --out /tmp/seg4.png)",
+      "Bash(sips --cropToHeightWidth 40 40 --cropOffset 0 13 /Users/pmac/Desktop/RRS/public/logo.png --out /Users/pmac/Desktop/RRS/public/logo-mark.png)",
+      "Bash(sips -s format png \"/Users/pmac/Desktop/RRS/RRS Logo.bmp\" --out /Users/pmac/Desktop/RRS/public/logo-mark.png)",
+      "Bash(python3 -c \"from PIL import Image; print\\('ok'\\)\")",
+      "Bash(convert --version)",
+      "Bash(pip3 install *)",
+      "Bash(claude mcp *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

@@ -8,8 +8,7 @@ export const homeContent = {
   },
 
   stats: [
-    { value: '$340M+', label: 'Recovered for clients' },
-    { value: '23+', label: 'Years specialized' },
+{ value: '23+', label: 'Years specialized' },
     { value: '98%', label: 'Client retention rate' },
     { value: '35', label: 'States licensed' },
   ],

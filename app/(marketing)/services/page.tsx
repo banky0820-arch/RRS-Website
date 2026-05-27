@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { servicesContent } from '@/content/services'
 import { ScrollReveal } from '@/components/marketing/ScrollReveal'
@@ -17,10 +18,23 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section
-        className="bg-ink py-24"
+        className="relative overflow-hidden py-32 min-h-[480px] flex items-center"
         aria-labelledby="services-hero-heading"
       >
-        <div className="container-wide max-w-4xl">
+        <Image
+          src="/services-hero.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-right"
+          sizes="100vw"
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(6,16,30,0.70) 100%)' }}
+          aria-hidden="true"
+        />
+        <div className="relative container-wide max-w-4xl">
           <ScrollReveal>
             <p className="font-body font-[500] text-[11px] tracking-[0.08em] uppercase text-accent mb-4">
               {hero.eyebrow}

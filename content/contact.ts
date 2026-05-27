@@ -36,7 +36,7 @@ export const contactContent = {
     phone: {
       label: 'Main line',
       value: '(888) 552-4817',
-      note: 'Business inquiries only. Consumer account inquiries: see Make a Payment.',
+      note: 'Business inquiries only. Consumer account inquiries: see Consumer Payment Portal.',
     },
     email: {
       label: 'General inquiries',

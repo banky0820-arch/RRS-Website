@@ -74,7 +74,7 @@ export function Footer() {
                 href="/payments"
                 className="font-body font-[500] text-[14px] text-accent hover:underline underline-offset-4"
               >
-                Make a Payment →
+                Consumer Payment Portal →
               </Link>
             </div>
           </div>

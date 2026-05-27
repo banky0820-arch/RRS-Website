@@ -9,8 +9,8 @@ import { Menu, X } from 'lucide-react'
 const navLinks = [
   { label: 'Services', href: '/services' },
   { label: 'Industry', href: '/industry' },
-  { label: 'Compliance', href: '/compliance' },
   { label: 'About', href: '/about' },
+  { label: 'Compliance', href: '/compliance' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -76,7 +76,7 @@ export function MarketingNav() {
               href="/payments"
               className="font-body font-[500] text-[14px] tracking-[0.01em] text-accent hover:underline underline-offset-4 whitespace-nowrap"
             >
-              Make a Payment →
+              Consumer Payment Portal →
             </Link>
           </div>
         </div>
@@ -129,7 +129,7 @@ export function MarketingNav() {
               href="/payments"
               className="py-4 font-body font-[500] text-[18px] text-accent"
             >
-              Make a Payment →
+              Consumer Payment Portal →
             </Link>
           </nav>
         </div>

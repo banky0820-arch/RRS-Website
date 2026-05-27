@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { homeContent } from '@/content/home'
@@ -7,13 +8,25 @@ export function Hero() {
 
   return (
     <section
-      className="relative flex min-h-screen items-center"
-      style={{
-        background: 'linear-gradient(180deg, #0A1628 0%, #06101e 100%)',
-      }}
+      className="relative flex min-h-screen items-center overflow-hidden"
       aria-label="Hero"
     >
-      <div className="container-wide w-full py-24">
+      {/* Background photo */}
+      <Image
+        src="/hero-resort.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover object-center"
+        sizes="100vw"
+      />
+      {/* Dark overlay */}
+      <div
+        className="absolute inset-0"
+        style={{ background: 'linear-gradient(135deg, rgba(10,22,40,0.88) 0%, rgba(6,16,30,0.72) 100%)' }}
+        aria-hidden="true"
+      />
+      <div className="relative container-wide w-full py-24">
         <div className="max-w-4xl">
           <h1
             className="font-display text-canvas"
@@ -42,7 +55,7 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <div className="absolute z-10 bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
         <div
           className="w-px h-8 bg-[rgba(250,247,242,0.25)]"
           aria-hidden="true"

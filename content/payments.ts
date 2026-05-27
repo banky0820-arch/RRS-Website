@@ -1,14 +1,14 @@
 export const paymentsContent = {
   landing: {
     headline: 'Your account with Resort Recovery Solutions',
-    subhead: 'Make a payment or set up a payment plan. If you have questions about your account, call us.',
+    subhead: 'Whatever your situation, we\'ll work with you to find a resolution.',
     miniMiranda:
       'This communication is from a debt collector. This is an attempt to collect a debt, and any information obtained will be used for that purpose.',
     cards: [
       {
         id: 'pay',
         icon: 'CreditCard',
-        title: 'Make a payment',
+        title: 'Consumer Payment Portal',
         description: 'Make a payment online through our secure payment processor.',
         cta: 'Pay now',
         href: 'https://intelligentnegotiator.com/resortrecoveryllc/',
@@ -17,8 +17,14 @@ export const paymentsContent = {
       {
         id: 'plan',
         icon: 'CalendarDays',
-        title: 'Set up a payment plan',
-        description: 'Arrange a payment schedule that works for your situation. Call us to discuss options.',
+        title: 'Ways to resolve your account',
+        description: '',
+        items: [
+          'Payment plan — arrange a payment schedule that fits your situation',
+          'Settlement — resolve the balance for less than the full amount owed (subject to client approval)',
+          'Deed-back — transfer ownership of your timeshare back to the resort, where eligible',
+        ],
+        footer: "Call us to discuss which option works for you. We're here to help.",
         cta: '(888) 552-4817',
         href: 'tel:8885524817',
         isPhone: true,
